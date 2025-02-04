@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Instagram Private Account Viewer 👀 | Instantly View IG Profiles Online">
+    <meta property="og:description" content="Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just fun!">
+    <meta property="og:image" content="public/og-image.jpg">
+    <meta property="og:url" content="https://hu-pr.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instagram Private Account Viewer 👀 | Instantly View IG Profiles Online">
+    <meta name="twitter:description" content="Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just fun!">
+    <meta name="twitter:image" content="public/twitter-image.jpg">
+    <link rel="canonical" href="https://hu-pr.com">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "HU-PR",
+  "url": "https://hu-pr.com",
+  "description": "Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just a smooth and fun experience. Start now!",
+  "publisher": {
+    "@type": "Organization",
+    "name": "HU-PR",
+    "url": "https://hu-pr.com",
+    "logo": "https://hu-pr.com/logo.png"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hu-pr.com"
+  }
+}
+</script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+    <title>Instagram Private Account Viewer 👀 | Instantly View IG Profiles Online</title>
+    <style>
+        :root {
+  --background: #000000f5;
+  --foreground: #f8fafc;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --secondary: #1e293b;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bg-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 30px 30px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  z-index: -2;
+}
+
+#particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--foreground);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--foreground);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--foreground);
+  border: 1px solid var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+}
+
+main {
+  padding-top: 5rem;
+  position: relative;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero, .features, .how-it-works, .pricing p {
+  font-size: 1.2rem;
+  color: #f0f1f3;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#floating-papers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-paper {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-paper svg {
+  width: 24px;
+  height: 24px;
+  color: rgba(139, 92, 246, 0.5);
+}
+
+.robot-animation {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+.robot-animation svg {
+  width: 128px;
+  height: 128px;
+  color: var(--primary);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links,
+  .nav-buttons {
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .robot-animation {
+    display: none;
+  }
+}
+ body { font-family: Arial, sans-serif; background-color: #000; margin: 0; padding: 0; }
+        section { padding: 4rem 2rem; text-align: center; }
+        .features i { font-size: 3rem; color: #8b5cf6; }
+        .features div { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+        .feature { max-width: 250px; }
+        .how-it-works img { max-width: 100%; height: auto; border-radius: 10px; }
+        .pricing-table { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        .pricing-plan { border: 1px solid #8b5cf6; padding: 2rem; border-radius: 10px; max-width: 300px; }
+.how-it-works {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.step-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.step img {
+    width: 40%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.step-text {
+    width: 60%;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step img {
+        width: 80%;
+        margin: 0 auto 10px;
+    }
+
+    .step-text {
+        width: 100%;
+    }
+}
+.examples {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .example {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .example img {
+            width: 40%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .example p, h3 {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+        .example-text {
+            width: 60%;
+        }
+        h2 {
+            color: #e5e4e4;
+        h3 {
+            color: #e5e4e4;
+        h4 {
+            color: #e5e4e4;
+        h5 {
+            color: #e5e4e4;
+        }
+        p {
+            color: #000;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .example {
+                flex-direction: column;
+                text-align: center;
+            }
+            .example img {
+                width: 100%;
+                margin: 0 0 15px 0;
+            }
+            .example-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <canvas id="particleCanvas"></canvas>
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bot-icon"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            <span>ResearchAI</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="btn btn-primary">Now! View Private Insta</button>
+        </div>
+    </nav>
+
+    <main>
+        <div id="floating-papers"></div>
+        <div class="hero">
+            <h1>Private Instagram <span class="gradient-text">Viewer Free</span></h1>
+            <p>Want to check out private Instagram accounts just for fun? HU-PR offers a smooth and engaging experience. No login, no downloads—just instant results! Try now and explore Instagram in a new way.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sparkles-icon"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+                    Now! View Private Insta
+                </button>
+            </div>
+        </div>
+        <div class="robot-animation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bot-icon"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+        </div>
+    </main>
+<section id="features" class="features">
+    <h2>Why <span class="gradient-text">Choose </span>HU-PR?</h2>
+    <p>Discover the powerful features that make HU-PR the best private Instagram viewer.</p>
+    <div>
+        <div class="feature">
+            <i class="fas fa-user-secret"></i>
+            <h4>Anonymous Viewing</h4>
+            <p>Stay completely anonymous while exploring private Instagram profiles. No login or personal details required.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-lock-open"></i>
+            <h4>Access Private Profiles</h4>
+            <p>Instantly unlock private Instagram accounts and view hidden photos and stories without restrictions.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>HU-PR Mobile Friendly</h4>
+            <p>Enjoy a seamless experience on any device, whether you're using a smartphone, tablet, or desktop.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h4>HU-PR Safe & Secure</h4>
+            <p>Your privacy is our priority. HU-PR operates with the latest security protocols to keep your data protected.</p>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="how-it-works" class="how-it-works">
+    <h2>How HU-PR <span class="gradient-text">Works?</span></h2>
+    <p>Viewing private Instagram profiles has never been easier. Follow these simple steps:</p>
+
+    <div class="step-container">
+        <div class="step">
+            <img src="step1.png" alt="Enter Instagram Username">
+            <div class="step-text">
+                <h3>Step 1: Enter Username</h3>
+                <p>Type the Instagram username of the private profile you want to view in our secure search bar.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="step2.png" alt="Processing Request">
+            <div class="step-text">
+                <h3>Step 2: Processing Request</h3>
+                <p>Our advanced algorithm connects to Instagram servers and fetches the requested profile data.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="step3.png" alt="View Private Profile">
+            <div class="step-text">
+                <h3>Step 3: View Private Profile</h3>
+                <p>Once the process is complete, you’ll be able to see private photos, videos, and stories anonymously.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="examples" class="examples">
+        <h2>Examples of Private Instagram Profile Viewing</h2>
+       <b> With HU-PR, you can easily and securely view private Instagram profiles while staying anonymous. Below are some real-world examples of how people use our tool:</b>
+        <div class="example">
+            <img src="reconnect.jpg" alt="Reconnecting with Old Friends">
+            <div class="example-text">
+                <h3>Reconnecting with Old Friends</h3>
+                <p>Have you lost touch with an old friend from high school or college? Many people keep their Instagram accounts private, making it impossible to see their latest posts. With HU-PR, you can view private Instagram profiles anonymously and check their updates without sending a follow request. This allows you to reconnect while respecting their privacy.</p>
+            </div>
+        </div>
+        
+        <div class="example">
+            <img src="monitoring.jpg" alt="Monitoring Your Child’s Online Activity">
+            <div class="example-text">
+                <h3>Monitoring Your Child’s Online Activity</h3>
+                <p>As a parent, ensuring your child’s online safety is crucial. If your child has set their Instagram profile to private, you may be unable to see their posts or interactions. Using our secure Instagram viewer, you can monitor your child’s Instagram activity anonymously, ensuring they are safe from online threats, cyberbullying, and inappropriate content.</p>
+            </div>
+        </div>
+        
+        <div class="example">
+            <img src="business.jpg" alt="Business & Competitor Analysis">
+            <div class="example-text">
+                <h3>Business & Competitor Analysis</h3>
+                <p>Businesses and influencers often use HU-PR to analyze competitors' strategies. If a competitor has a private Instagram profile, you can still gain insights into their content, branding, and marketing tactics without having to follow them. This helps brands stay competitive in the market.</p>
+            </div>
+        </div>
+        
+        <div class="example">
+            <img src="ex.jpg" alt="Viewing an Ex-Partner’s Instagram Profile">
+            <div class="example-text">
+                <h3>Viewing an Ex-Partner’s Instagram Profile</h3>
+                <p>Curious about what your ex is up to after a breakup? If their profile is set to private, you won’t be able to see their latest posts or stories. With our private Instagram viewer, you can anonymously view their photos and stories without them knowing. This helps you gain closure or stay updated without direct interaction.</p>
+            </div>
+        </div>
+        
+        <div class="example">
+            <img src="seller.jpg" alt="Checking a Seller’s Legitimacy">
+            <div class="example-text">
+                <h3>Checking a Seller’s Legitimacy</h3>
+                <p>Before purchasing from a private Instagram seller, it’s important to verify their authenticity. Many small businesses operate through private Instagram accounts. HU-PR allows you to view private Instagram profiles to check their posts, reviews, and customer interactions before making a purchase. This ensures you don’t fall for scams.</p>
+            </div>
+            </div>
+    </section>
+    
+    <section id="pricing" class="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-plan">
+                <h3>Basic</h3>
+                <p>Free</p>
+                <p>Limited Access</p>
+            </div>
+            <div class="pricing-plan">
+                <h3>Premium</h3>
+                <p>$9.99/month</p>
+                <p>Unlimited Access</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Particle animation
+const canvas = document.getElementById("particleCanvas")
+const ctx = canvas.getContext("2d")
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+
+const particles = []
+const particleCount = 100
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width
+    this.y = Math.random() * canvas.height
+    this.size = Math.random() * 1 + 0.5
+    this.speedX = Math.random() * 0.5 - 0.25
+    this.speedY = Math.random() * 0.5 - 0.25
+  }
+
+  update() {
+    this.x += this.speedX
+    this.y += this.speedY
+
+    if (this.x > canvas.width) this.x = 0
+    else if (this.x < 0) this.x = canvas.width
+    if (this.y > canvas.height) this.y = 0
+    else if (this.y < 0) this.y = canvas.height
+  }
+
+  draw() {
+    ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
+    ctx.beginPath()
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
+    ctx.fill()
+  }
+}
+
+function initParticles() {
+  for (let i = 0; i < particleCount; i++) {
+    particles.push(new Particle())
+  }
+}
+
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].update()
+    particles[i].draw()
+  }
+  requestAnimationFrame(animateParticles)
+}
+
+initParticles()
+animateParticles()
+
+// Floating papers animation
+function createFloatingPapers() {
+  const floatingPapersContainer = document.getElementById("floating-papers")
+  const paperCount = 6
+
+  for (let i = 0; i < paperCount; i++) {
+    const paper = document.createElement("div")
+    paper.className = "floating-paper"
+    paper.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        `
+    paper.style.left = `${Math.random() * 100}%`
+    paper.style.top = `${Math.random() * 100}%`
+    paper.style.animation = `float ${Math.random() * 10 + 10}s ease-in-out infinite`
+    paper.style.animationDelay = `${Math.random() * 5}s`
+    floatingPapersContainer.appendChild(paper)
+  }
+}
+
+// Initialize animations
+createFloatingPapers()
+
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault()
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    })
+  })
+})
+
+// Resize event listener
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+  initParticles()
+})
+    </script>
+</body>
+</html>
