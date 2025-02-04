@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just fun!">
+    <meta name="keywords" content="Private Instagram Viewer, View Private Instagram, See private Instagram, How to view private Instagram, How to see private Instagram, Instagram IG Viewer, Private Instagram Viewer free 2025">
     <meta property="og:title" content="Instagram Private Account Viewer 👀 | Instantly View IG Profiles Online">
     <meta property="og:description" content="Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just fun!">
     <meta property="og:image" content="https://hu-pr.com/public/view-private-instagram-profiles-anonymously.jpg">
@@ -16,35 +18,6 @@
     <link rel="canonical" href="https://hu-pr.com">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "HU-PR",
-  "url": "https://hu-pr.com",
-  "description": "Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just a smooth and fun experience. Start now!",
-  "publisher": {
-    "@type": "Organization",
-    "name": "HU-PR",
-    "url": "https://hu-pr.com",
-    "logo": "https://hu-pr.com/logo.png"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://hu-pr.com"
-  }
-}
-</script>
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-</script>
     <title>Instagram Private Account Viewer 👀 | Instantly View IG Profiles Online</title>
     <style>
         :root {
@@ -410,7 +383,80 @@ h1 {
 .footer a:hover {
     text-decoration: underline;
 }
+ @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        .nav-links a {
+            color: var(--foreground);
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        nav {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    }
+    
+    /* Ensure that the hamburger menu is hidden on larger screens */
+    @media (min-width: 769px) {
+        .menu-toggle {
+            display: none;
+        }
+    }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "HU-PR",
+  "url": "https://hu-pr.com",
+  "description": "Want to view private Instagram profiles instantly? Try HU-PR – the ultimate Instagram Private Account Viewer. No login, no surveys, just a smooth and fun experience. Start now!",
+  "publisher": {
+    "@type": "Organization",
+    "name": "HU-PR",
+    "url": "https://hu-pr.com",
+    "logo": "https://hu-pr.com/logo.png"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hu-pr.com"
+  }
+}
+</script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
 </head>
 <body>
     <div class="bg-grid"></div>
@@ -418,18 +464,18 @@ h1 {
     <nav>
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bot-icon"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
-            <span>HU-PR.COM</span>
+            <span class="gradient-text">HU-PR.COM</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#how-it-works">How it Works</a></li>
-            <li><a href="#examples">Examples</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-        </ul>
-        <div class="nav-buttons">
-            <button class="btn btn-primary">Now! View Private Insta</button>
-        </div>
-    </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bot-icon"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+    </ul>
+</nav>
 
     <main>
         <div id="floating-papers"></div>
@@ -508,7 +554,7 @@ h1 {
 
     
     <section id="examples" class="examples">
-        <h2>Examples of Private Instagram Profile Viewing</h2>
+        <h2>Examples of Private <span class="gradient-text">Instagram Profile Viewing</span></h2>
        <b> With HU-PR, you can easily and securely view private Instagram profiles while staying anonymous. Below are some real-world examples of how people use our tool:</b>
         <div class="example">
             <img src="public/view-private-instagram-profiles-anonymously.jpg" alt="view private Instagram profiles anonymously">
@@ -663,5 +709,11 @@ window.addEventListener("resize", () => {
   initParticles()
 })
     </script>
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
